@@ -1,4 +1,4 @@
-import { Machine } from './machine';
+import { Machine } from './fsm/machine';
 
 type Floor = 1 | 2 | 3;
 type AllowedEvents = {
