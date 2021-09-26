@@ -1,3 +1,3 @@
-# State Machine ⚙️
+# Finite State Machine 🎰
 
-An abstract type safe state state machine.
+An abstract type safe finite state machine.
