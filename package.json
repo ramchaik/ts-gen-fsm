@@ -1,0 +1,58 @@
+{
+  "name": "@vsr.common/fsm",
+  "description": "An abstract type safe finite state machine.",
+  "version": "1.1.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "build": "npm-run-all clean tsc",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix",
+    "test": "jest",
+    "release": "standard-version",
+    "prepublish": "npm run build && npm run release && git push --follow-tags origin master"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.2",
+    "@types/prompt-sync": "^4.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.7",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.3.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.3"
+  },
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramchaik/ts-gen-fsm.git"
+  },
+  "keywords": [
+    "fsm",
+    "state machine"
+  ],
+  "author": "Vaibhav Singh <0vaibhavsingh0@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ramchaik/ts-gen-fsm/issues"
+  },
+  "homepage": "https://github.com/ramchaik/ts-gen-fsm#readme"
+}
