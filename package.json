@@ -4,7 +4,9 @@
   "version": "1.1.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "type": "module",
   "scripts": {
+    "dev:example": "nodemon src/example/elevator.ts",
     "clean": "rimraf dist/*",
     "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
     "build": "npm-run-all clean tsc",
@@ -23,6 +25,7 @@
     "@types/prompt-sync": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^4.28.2",
     "@typescript-eslint/parser": "^4.28.2",
+    "@vsr.common/fsm": "^1.1.0",
     "babel-jest": "^27.0.6",
     "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -40,7 +43,6 @@
   "files": [
     "dist/"
   ],
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ramchaik/ts-gen-fsm.git"
