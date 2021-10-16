@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/ramchaik/ts-gen-fsm/compare/v1.1.0...v1.2.0) (2021-10-16)
+
+
+### Features
+
+* setup package ([246c943](https://github.com/ramchaik/ts-gen-fsm/commit/246c943b1f93de2edfcc1a426554f09fdb1b8fd8))
+
 ## 1.1.0 (2021-10-16)
 
 
